@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Selecione uma Sala</title>
+</head>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #f4f4f4;
+    }
+    .content {
+        text-align: center;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 600px;
+    }
+    h1 {
+        margin-bottom: 20px;
+        font-size: 1.8em;
+    }
+    .sala-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .sala-list li {
+        margin: 10px 0;
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 20px;
+    }
+    .sala-list a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 1.2em;
+        display: block;
+        padding: 15px;
+        border-radius: 4px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    .sala-list a:hover {
+        background-color: #e9ecef;
+        color: #000000;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Escolha uma Sala</h1>
+            <ul class="sala-list">
+                <li><a href="chat.html">Futebol</a></li>
+                <li><a href="chat.html">Programação</a></li>
+                <li><a href="chat.html">Aleatório</a></li>
+                <li><a href="chat.html">Filmes</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

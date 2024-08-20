@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bate-Papo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .chat-container {
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color:#23598B ;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        .messages {
+            flex: 1;
+            padding: 10px;
+            overflow-y: auto;
+            border-bottom: 1px solid #ccc;
+        }
+        .message {
+            margin-bottom: 10px;
+        }
+        .message.user {
+            text-align: right;
+        }
+        .message p {
+            margin: 0;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .message.user p {
+            background-color: #e0f7fa;
+            display: inline-block;
+        }
+        .message p {
+            background-color: #f1f1f1;
+            display: inline-block;
+        }
+        .input-area {
+            display: flex;
+            border-top: 1px solid #ccc;
+            padding: 10px;
+            background-color: #fafafa;
+        }
+        .input-area input {
+            flex: 1;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            outline: none;
+        }
+        .input-area button {
+            padding: 10px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="messages">
+            <div class="message">
+                <p>oii</p>
+            </div>
+            <div class="message user">
+                <p>opa</p>
+            </div>
+            <div class="message">
+                <p>tranquilo</p>
+            </div>
+        </div>
+        <div class="input-area">
+            <input type="text" placeholder="Digite uma mensagem...">
+            <button>Enviar</button>
+        </div>
+    </div>
+</body>
+</html>
